@@ -8,10 +8,12 @@ import {
 } from "recoil";
 import CharacterCounter from "./RecoilStart/CharacterCounter";
 import TodoList from "./RecoilTodoList/TodoList";
+import Parent from "./Componenttest/Parent";
 
 function App() {
   return (
     <RecoilRoot>
+      {/* <Parent /> */}
       <TodoList />
     </RecoilRoot>
   );

@@ -4,7 +4,9 @@ import { todoListState } from "../Recoil/atom";
 export default function TodoItem({ item }) {
   const [todoList, setTodoList] = useRecoilState(todoListState);
   const index = todoList.findIndex((listItem) => listItem === item);
-
+  console.log("받아온 list", todoList);
+  console.log("받아온 item", item);
+  console.log("자유로운", index);
   const editItemText = ({ target: { value } }) => {
     const newList = replaceItemAtIndex(todoList, index, {
       ...item,
